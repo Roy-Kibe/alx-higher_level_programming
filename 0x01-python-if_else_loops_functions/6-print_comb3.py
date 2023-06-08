@@ -1,4 +1,8 @@
 #!/usr/bin/python3
-for i in range(10):
-    for j in range(i + 1, 10):
-        print("{:d}{:d}".format(i, j), end=", ")
+for i in range(0, 8):
+    for j in range(1, 10):
+        if j <= i:
+            continue
+        else:
+            print("{:d}{:d}".format(i, j), end=", ")
+print("89")
